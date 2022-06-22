@@ -1,102 +1,118 @@
-body {
-  margin: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: #2d0000;
-  color: white;
-}
+/*-----------------------------------------------------------*/
+/*                      ELEMENTS                             */
+/*-----------------------------------------------------------*/
 
-ul {
-  list-style-type: none;
-  margin: 0;
+* {
   padding: 0;
-  overflow: hidden;
-  background-color: rgb(255, 0, 0);
-  top: 0;
-  position: fixed;
-  width: 100%;
-  border-bottom: 1px solid #3b429f;
+  margin: 0;
+  font-size: 62.5%;
 }
 
-li {
-  float: left;
-  border-right: 1px solid #3b429f;
+body {
+  font-size: 3.2rem;
+  font-family: "Crimson Text", serif;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #3b429f;
-}
-
-li:last-child {
-  border-right: none;
-  border-left: 1px solid #3b429f;
-}
-
-.active {
-  background-color: #aa0404;
-}
-
-.container {
-  margin: 0rem 1rem 2rem 1rem;
-  padding: 1rem;
-  background-color: #790202;
-  box-shadow: 0.5rem 1rem #12175c;
-  display: flex;
-}
-
-.container2 {
-  margin: 2rem;
-  padding: 1rem;
-  background-color: #790202;
-  box-shadow: 0.5rem 1rem #12175c;
-  border-radius: 1rem;
-  max-width: 20rem;
-}
-
-.small {
-  max-width: 10rem;
-}
-
-.medium {
-  max-width: 20rem;
-}
-
-.box {
-  background-color: rgb(225, 53, 53);
-  width: 20rem;
-}
-
-.fill {
-  margin-top: 2.5rem;
-}
-
-P {
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
+button {
+  cursor: pointer;
 }
 
 h1 {
-  margin: 0 0 1rem 0;
-  color: #9097ff;
+  font-size: 7.2rem;
 }
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  margin-top: 3rem;
+}
+
+footer {
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+}
+
+/*-----------------------------------------------------------*/
+/*                      NAVIGATION                           */
+/*-----------------------------------------------------------*/
+
+ul a {
+  display: block;
+}
+
+ul {
+  display: none;
+  width: 20rem;
+}
+
+a {
+  color: rgb(131, 131, 131);
+  text-shadow: 0 0 0.1rem rgb(0, 61, 29);
+  text-decoration: none;
+}
+
+.navLogo {
+  width: 10rem;
+}
+
+.navBtn {
+  background: none;
+  border: none;
+  overflow: hidden;
+  position: absolute;
+}
+
+/*-----------------------------------------------------------*/
+/*                      CONTAINERS                           */
+/*-----------------------------------------------------------*/
+
+.navContainer {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 68%,
+    rgba(255, 255, 255, 0) 68%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 80%;
+}
+
+.mainContainer {
+  margin: 0 20%;
+  background-color: white;
+}
+
+/*-----------------------------------------------------------*/
+/*                      CLASSES                              */
+/*-----------------------------------------------------------*/
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-em {
-  font-size: 1.2rem;
-  color: aqua;
+.space {
+  justify-content: space-evenly;
+}
+
+.stars {
+  background-image: url(/asset/stars.gif);
+  background-size: cover;
+}
+
+.mainImage {
+  margin-top: 5rem;
+  width: 45rem;
+}
+
+.navContainer > h2 {
+  margin-left: 30%;
+  margin-top: 5rem;
+}
+
+.center {
+  text-align: center;
+  padding-top: 5rem;
 }

@@ -7,24 +7,60 @@
     <title>GGBergen</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="Images/GGBergenicon.ico" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a class="active" href="index.html">Hjem</a></li>
-        <li><a href="eventer.html">Eventer</a></li>
-        <li><a href="kontakt.html">Kontakt oss</a></li>
-      </ul>
+    <button onclick="showmenu();" class="navBtn">
+      <img
+        src="/asset/meLogo.png"
+        class="navLogo"
+        alt="Morthen's face with a funny hat"
+      />
+    </button>
+    <ul id="myUL">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </ul>
+    <header class="stars flex">
+      <div class="navContainer">
+        <h2><a href="#news">News</a></h2>
+        <h2><a href="#contact">Contact</a></h2>
+        <h2><a href="#about">About</a></h2>
+      </div>
+      <div>
+        <img
+          src="asset/male.png"
+          alt="full body view of Morthen"
+          class="mainImage"
+        />
+      </div>
     </header>
-    <div class="fill"></div>
-    <div class="flex">
-      <article class="container2">
-        <img src="Images/GGBergenlog.png" alt="GGBergen sin logo" />
-        <p class="blocktext">
-          GGbergen er en frivillig organisasjon som holder ukentlige eventer på
-          Ungdommens hus på Laksevåg.
-        </p>
-      </article>
+    <div class="mainContainer">
+      <h1 class="center">Welcome</h1>
+      <div class="flex">
+        <h3 class="space">
+          I have many years of experience within the service business, games,
+          game-culture, eSport and LAN. One of my biggest achievements which can
+          be seen today, is being one of the founders of GGBergen, a volunteer
+          gaming organization which I am to this date the deputy chairman of.
+        </h3>
+        <h3>
+          I have always had an interest in programming, but it was not before I
+          tried to make my own flash game or modify my Nintendo Wii I saw the
+          scope of what programming was capable of. I did not pursue this career
+          at that time since I just saw it as a hobby
+        </h3>
+      </div>
     </div>
+    <footer>
+      <p>Bruh</p>
+    </footer>
   </body>
 </html>
