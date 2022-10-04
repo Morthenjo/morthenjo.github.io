@@ -18,13 +18,24 @@ import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
 
 function App() {
-  const [text, setText] = useState(Text.Norwegian);
+  const [text, setText] = useState(Text.English);
+  useEffect(() => {
+    navigator.language && "nb-NO"
+      ? setText(Text.Norwegian)
+      : setText(Text.English);
+  }, []);
   const [active, setActive] = useState(false);
   const menuToggle = () => {
     setActive(!active);
     setText(active ? Text.Norwegian : Text.English);
   };
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState();
+  useEffect(() => {
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? setTheme("dark")
+      : setTheme("light");
+  }, []);
   useEffect(() => {
     Aos.refresh();
   }, [theme]);
