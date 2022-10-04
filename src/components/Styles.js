@@ -15,21 +15,22 @@ import ArrowR from "../pages/projectPage/img/arrowR.png";
 
 export const darkMode = {
   color: "#f0f0f0",
-  background: "rgba(0, 0, 0, 0.25)",
+  background: "rgba(10, 10, 10, 0.20)",
   bgImg: nightfall,
   bgImgDesktop: nightfallW,
   img: moon,
   link: "#ADB2F8",
-  project1: "rgba(0, 0, 0, 1)",
+  project1: "rgba(0, 0, 0, 0.5)",
   project2: "rgba(0, 0, 0, 0)",
   project3: "rgba(0, 0, 0, 0)",
-  project4: "rgba(0, 0, 0, 1)",
+  project4: "rgba(0, 0, 0, 0.5)",
   face: MorthenD,
+  btnBg: "rgba(100, 100, 100, 0.20)",
 };
 
 export const lightMode = {
   color: "#141415",
-  background: "rgba(200, 200, 255, 0.35)",
+  background: "rgba(200, 200, 255, 0.45)",
   bgImg: sunriseW,
   bgImgDesktop: sunriseW,
   img: sun,
@@ -39,6 +40,7 @@ export const lightMode = {
   project3: "rgba(255, 255, 255, 0)",
   project4: "rgba(200, 200, 255, 0.8)",
   face: MorthenL,
+  btnBg: "rgba(200, 200, 255, 0.75)",
 };
 
 //------------------------------------------------------------------------------------//
@@ -341,15 +343,19 @@ export const Button = styled.button`
 
 export const CollapseButton = styled.button`
   color: ${(props) => props.theme.color};
-  background: ${(props) => props.theme.background};
+  background: ${(props) => props.theme.btnBg};
   transition: 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 1.5rem;
   font-weight: bold;
   width: 20rem;
+  opacity: ${(props) => (props.active ? 1 : 0.7)};
   cursor: pointer;
   padding: 1rem;
   border-radius: ${(props) => (props.active ? "1rem 1rem 0 0" : "1rem")};
+  :hover {
+    color: ${(props) => props.theme.link};
+  }
   @media (max-width: 425px) {
     width: 90%;
     font-size: 1rem;
