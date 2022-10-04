@@ -6,6 +6,8 @@ import nightfallW from "../img/nightfallW.avif";
 import moon from "../img/moon.png";
 import MorthenL from "../pages/homePage/morthenLight.jpg";
 import MorthenD from "../pages/homePage/morthenDark.jpg";
+import ArrowD from "../pages/projectPage/img/arrowD.png";
+import ArrowR from "../pages/projectPage/img/arrowR.png";
 
 //------------------------------------------------------------------------------------//
 //                               Light & Dark                                         //
@@ -340,14 +342,24 @@ export const Button = styled.button`
 export const CollapseButton = styled.button`
   color: ${(props) => props.theme.color};
   background: ${(props) => props.theme.background};
+  transition: 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 1.5rem;
   font-weight: bold;
-  width: 16rem;
+  width: 20rem;
+  cursor: pointer;
+  padding: 1rem;
   border-radius: ${(props) => (props.active ? "1rem 1rem 0 0" : "1rem")};
   @media (max-width: 425px) {
     width: 90%;
+    font-size: 1rem;
   }
+`;
+
+export const Arrow = styled.div`
+  background: url(${(props) => (props.active ? ArrowD : ArrowR)}) right
+    no-repeat;
+  background-size: contain;
 `;
 
 export const DarkModeButton = styled.button`
