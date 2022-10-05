@@ -150,14 +150,18 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectDiv = styled.div`
-  display: ${(props) => (props.active ? "flex" : "none")};
+  display: flex;
   width: 90%;
+  transform: scale(${(props) => (props.active ? "100%" : "0")});
+  transform-origin: 50% 0%;
+  max-height: ${(props) => (props.active ? "600px" : "0")};
+  height: auto;
   margin: auto;
   padding: 0 0 2%;
+  transition: all 1s;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     margin: 0 auto;
-    width: 90%;
   }
 `;
 
@@ -186,14 +190,13 @@ export const ProjectFlex = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 20%;
   margin-right: auto;
+  height: inherit;
+  width: 20%;
+  overflow: hidden;
   @media (max-width: 768px) {
     width: 100%;
-    height: 150px;
-  }
-  @media (max-width: 425px) {
-    height: 150px;
+    height: 100px;
   }
 `;
 
@@ -204,9 +207,6 @@ export const ProjectImg = styled.img`
   overflow: hidden;
   border-radius: 0 3rem 3rem 0;
   @media (max-width: 768px) {
-    border-radius: 3rem 3rem 0 0;
-  }
-  @media (max-width: 425px) {
     border-radius: 0;
   }
 `;
@@ -271,10 +271,11 @@ export const StyledAboutP = styled.p`
 
 export const StyledP = styled.p`
   color: ${(props) => props.theme.color};
-  display: flex;
   justify-content: center;
+  display: flex;
   gap: 1rem;
   font-weight: 400;
+  padding: 0 1rem;
   @media (min-width: 1200px) {
     font-size: 1.5rem;
   }
@@ -347,7 +348,6 @@ export const Button = styled.button`
 export const CollapseButton = styled.button`
   color: ${(props) => props.theme.color};
   background: ${(props) => props.theme.btnBg};
-  transition: 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 1.5rem;
   font-weight: bold;
@@ -361,7 +361,7 @@ export const CollapseButton = styled.button`
     opacity: 1;
     border: 1px solid white;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 90%;
     font-size: 1rem;
   }
