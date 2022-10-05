@@ -20,9 +20,15 @@ import { useEffect } from "react";
 function App() {
   const [text, setText] = useState(Text.English);
   useEffect(() => {
-    navigator.language === "nb-NO"
-      ? setText(Text.Norwegian)
-      : setText(Text.English);
+    if (navigator.language === "no") {
+      setText(Text.Norwegian);
+    }
+    if (navigator.language === "nb") {
+      setText(Text.Norwegian);
+    }
+    if (navigator.language === "nn") {
+      setText(Text.Norwegian);
+    }
   }, []);
   const [active, setActive] = useState(false);
   const menuToggle = () => {
