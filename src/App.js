@@ -20,7 +20,7 @@ import { useEffect } from "react";
 function App() {
   const [text, setText] = useState(Text.English);
   useEffect(() => {
-    navigator.language && "nb-NO"
+    navigator.language === "nb-NO"
       ? setText(Text.Norwegian)
       : setText(Text.English);
   }, []);
