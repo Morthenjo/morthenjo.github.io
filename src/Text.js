@@ -20,6 +20,9 @@ const Text = {
         Text: "Jeg bruker mesteparten av fritiden min på ting som er spill relatert, alt fra å gjøre raids i Guild Wars 2 til å arrangere lokale turneringer, spill-eventer og LAN-parties.",
       },
     },
+    Contact: {
+      Title: "Få tak i meg.",
+    },
     Project: { Title: "Prosjekter" },
     Projects: [
       {
@@ -97,6 +100,9 @@ const Text = {
         Title: "Hobbies",
         Text: "I use most of my spare time with anything gaming related, ranging from raiding in Guild Wars 2, to hosting local tournaments at either GGBergen or various LAN parties.",
       },
+    },
+    Contact: {
+      Title: "Get in touch.",
     },
     Project: { Title: "Projects" },
     Projects: [

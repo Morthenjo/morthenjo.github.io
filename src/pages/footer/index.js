@@ -49,7 +49,7 @@ const Footer = () => {
             <FooterP>Discord</FooterP>
           </FooterA>
         </FlexRow>
-        <FooterP>©2022 - MorthenJo</FooterP>
+        <FooterP>This page is Open-Source on Github</FooterP>
       </FooterDiv>
     </Blur2>
   );

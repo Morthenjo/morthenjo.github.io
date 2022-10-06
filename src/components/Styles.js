@@ -90,7 +90,7 @@ export const Blur2 = styled.div`
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
   margin-top: 5%;
 `;
@@ -103,6 +103,18 @@ export const Flex = styled.div`
   @media (max-width: 768px) {
     margin: 10px;
     flex-direction: column;
+  }
+`;
+
+export const ContactFlex = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  @media (max-width: 768px) {
+    margin: 10px;
+    flex-direction: column;
+  }
+  @media (max-width: 425px) {
   }
 `;
 
@@ -121,6 +133,9 @@ export const FlexColoumn = styled.div`
   display: flex;
   flex-direction: column;
   margin: 5% 10%;
+  @media (max-width: 425px) {
+    margin: 0;
+  }
 `;
 
 // Container to center text and itself
@@ -158,7 +173,7 @@ export const ProjectDiv = styled.div`
   height: auto;
   margin: auto;
   padding: 0 0 2%;
-  transition: all 1s;
+  transition: all 0.6s;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -200,6 +215,43 @@ export const ImgContainer = styled.div`
   }
 `;
 
+export const ContactImgContainer = styled.div`
+  width: 20%;
+  justify-content: center;
+  margin: auto;
+  @media (max-width: 768px) {
+    width: 30%;
+  }
+  @media (max-width: 425px) {
+    width: 50%;
+  }
+`;
+
+export const ImgContact = styled.img`
+  width: 100%;
+  object-fit: contain;
+  :hover {
+    animation: phone 2s;
+  }
+  @keyframes phone {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`;
+
 export const ProjectImg = styled.img`
   width: 100%;
   height: 100%;
@@ -219,6 +271,17 @@ export const StyledH1 = styled.h1`
   text-align: center;
   color: ${(props) => props.theme.color};
   padding: 0 0 5%;
+`;
+
+export const StyledContactH1 = styled.h1`
+  text-align: center;
+  color: ${(props) => props.theme.color};
+  text-decoration: underline;
+  text-decoration-color: ${(props) => props.theme.link};
+  padding: 5% 0 5%;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const StyledHeader = styled.h1`
@@ -295,7 +358,45 @@ export const StyledA = styled.a`
   color: ${(props) => props.theme.link};
 `;
 
+export const StyledContactA = styled.a`
+  color: ${(props) => props.theme.color};
+  :hover {
+    color: ${(props) => props.theme.link};
+  }
+`;
+
 export const FooterA = styled.a``;
+
+export const ContactLeft = styled.h3`
+  text-align: left;
+  color: ${(props) => props.theme.color};
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  text-decoration: underline;
+  :hover {
+    color: ${(props) => props.theme.link};
+    transform: rotate(-5deg);
+  }
+  @media (max-width: 1200px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
+`;
+
+export const ContactRight = styled.h3`
+  text-align: left;
+  color: ${(props) => props.theme.color};
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  :hover {
+    color: ${(props) => props.theme.link};
+    transform: skewX(-20deg);
+  }
+`;
 
 //------------------------------------------------------------------------------------//
 //                                    MISC                                            //
@@ -388,4 +489,9 @@ export const DarkModeButton = styled.button`
     top: 4rem;
     left: 2rem;
   }
+`;
+
+export const ContactImg = styled.img`
+  object-fit: contain;
+  height: 3rem;
 `;

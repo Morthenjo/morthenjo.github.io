@@ -16,6 +16,7 @@ import { useState } from "react";
 import { activeTxt } from "./components/Context";
 import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
+import ContactPage from "./pages/contactPage";
 
 function App() {
   const [text, setText] = useState(Text.English);
@@ -57,6 +58,7 @@ function App() {
           <HomePage />
           <AboutMe />
           <ProjectPage />
+          <ContactPage />
           <Footer />
         </Box>
       </activeTxt.Provider>
