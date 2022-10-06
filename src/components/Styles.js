@@ -152,7 +152,7 @@ export const ProjectContainer = styled.div`
 export const ProjectDiv = styled.div`
   display: flex;
   width: 90%;
-  transform: scale(${(props) => (props.active ? "100%" : "0")});
+  transform: scaleY(${(props) => (props.active ? "100%" : "0")});
   transform-origin: 50% 0%;
   max-height: ${(props) => (props.active ? "600px" : "0")};
   height: auto;
