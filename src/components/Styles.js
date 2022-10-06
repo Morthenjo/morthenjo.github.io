@@ -492,6 +492,5 @@ export const DarkModeButton = styled.button`
 `;
 
 export const ContactImg = styled.img`
-  object-fit: contain;
   height: 3rem;
 `;
