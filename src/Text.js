@@ -22,6 +22,7 @@ const Text = {
     },
     Contact: {
       Title: "Få tak i meg.",
+      Copied: "Kopiert!",
     },
     Project: { Title: "Prosjekter" },
     Projects: [
@@ -114,6 +115,7 @@ const Text = {
     },
     Contact: {
       Title: "Get in touch.",
+      Copied: "Copied!",
     },
     Project: { Title: "Projects" },
     Projects: [

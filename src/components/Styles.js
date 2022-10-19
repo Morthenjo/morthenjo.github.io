@@ -108,8 +108,8 @@ export const Flex = styled.div`
 
 export const ContactFlex = styled.div`
   display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
+  justify-content: space-around;
+  margin-bottom: 10%;
   @media (max-width: 768px) {
     margin: 10px;
     flex-direction: column;
@@ -132,7 +132,6 @@ export const FlexRow = styled.div`
 export const FlexColoumn = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 5% 10%;
   @media (max-width: 425px) {
     margin: 0;
   }
@@ -217,10 +216,11 @@ export const ImgContainer = styled.div`
 
 export const ContactImgContainer = styled.div`
   width: 20%;
-  justify-content: center;
-  margin: auto;
+  object-fit: contain;
+  margin: auto 0;
   @media (max-width: 768px) {
     width: 30%;
+    margin: 5rem auto;
   }
   @media (max-width: 425px) {
     width: 50%;
@@ -396,6 +396,22 @@ export const ContactRight = styled.h3`
     color: ${(props) => props.theme.link};
     transform: skewX(-20deg);
   }
+`;
+
+export const ContactP = styled.p`
+  position: absolute;
+  z-index: 1;
+  top: -100%;
+  left: 20%;
+  /*Box model stuff*/
+  width: fit-content;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  /*Manipulations stuff*/
+  transform: translateX(-50%);
+  transition: 0.3s;
+  opacity: ${(props) => (props.active ? 1 : 0)};
 `;
 
 //------------------------------------------------------------------------------------//

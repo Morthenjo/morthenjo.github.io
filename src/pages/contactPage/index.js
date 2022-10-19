@@ -1,25 +1,16 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { activeTxt } from "../../components/Context";
 import {
   Blur,
-  CenterDiv,
   ContactFlex,
   ContactImg,
   ContactImgContainer,
   ContactLeft,
-  ContactLeftBtn,
-  ContactRight,
-  Flex,
+  ContactP,
   FlexColoumn,
-  FlexRow,
   ImgContact,
-  ImgContainer,
-  ProjectImg,
-  StyledA,
   StyledContactA,
   StyledContactH1,
-  StyledH1,
-  StyledH2,
 } from "../../components/Styles";
 import Telephone from "./telephone.png";
 import Phone from "./phone.webp";
@@ -29,6 +20,7 @@ import MailIcon from "../footer/img/mailIcon.png";
 
 const ContactPage = () => {
   const { text } = useContext(activeTxt);
+  const [active, setActive] = useState(false);
   return (
     <Blur>
       <StyledContactH1>{text.Contact.Title}</StyledContactH1>
@@ -41,9 +33,13 @@ const ContactPage = () => {
             <ContactLeft
               onClick={() => {
                 navigator.clipboard.writeText("004746819106");
-                alert("Copied to Clipboard");
+                setActive(true);
+                setTimeout(() => {
+                  setActive(false);
+                }, 1500);
               }}
             >
+              <ContactP active={active}>{text.Contact.Copied}</ContactP>
               <ContactImg src={Telephone} alt="Telephone" />
               +47 468 19 106
             </ContactLeft>
