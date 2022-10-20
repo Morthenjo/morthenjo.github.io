@@ -484,12 +484,6 @@ export const CollapseButton = styled.button`
   }
 `;
 
-export const Arrow = styled.div`
-  background: url(${(props) => (props.active ? ArrowD : ArrowR)}) right
-    no-repeat;
-  background-size: contain;
-`;
-
 export const DarkModeButton = styled.button`
   position: absolute;
   top: 1rem;

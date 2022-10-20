@@ -1,6 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.css";
 import {
-  Arrow,
   CollapseButton,
   ImgContainer,
   ProjectContainer,
@@ -13,6 +12,7 @@ import {
 import { activeTxt } from "../../components/Context";
 import { useContext } from "react";
 import { useState } from "react";
+import { ArrowDiv } from "../../components/arrow/styles";
 
 const Projects = () => {
   const { text } = useContext(activeTxt);
@@ -27,7 +27,10 @@ const Projects = () => {
           onClick={() => menuToggle(item.id)}
           active={active[item.id]}
         >
-          <Arrow active={active[item.id]}>{item.title}</Arrow>
+          <StyledP>
+            {item.title}
+            <ArrowDiv active={active[item.id]} />
+          </StyledP>
         </CollapseButton>
         <ProjectDiv key={item.id} active={active[item.id]}>
           <ProjectTextDiv>
