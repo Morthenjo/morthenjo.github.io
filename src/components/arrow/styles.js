@@ -4,13 +4,16 @@ export const ArrowDiv = styled.div`
   background: #fff;
   height: 3px;
   width: 30px;
-  margin: 1rem auto 0;
+  margin: auto;
   position: relative;
+  border-radius: 100px;
   cursor: pointer;
+  transform: rotate(-90deg);
   &:before,
   &:after {
     content: "";
     background: #fff;
+    border-radius: 100px;
     position: absolute;
     height: 3px;
     width: 15px;
