@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c144c39c.css",
-    "main.js": "/static/js/main.ef6204a9.js",
+    "main.js": "/static/js/main.6c0a8703.js",
     "static/media/SolarSystem.png": "/static/media/SolarSystem.6e6af62c1b0572726bd2.png",
+    "static/media/CatFact.png": "/static/media/CatFact.ea31f0a4e2d2acfda7f6.png",
     "static/media/morthenLight.jpg": "/static/media/morthenLight.015f33660464b1dc19f6.jpg",
     "static/media/morthenDark.jpg": "/static/media/morthenDark.cc8057b0dbee0c85d14f.jpg",
     "static/media/sun.png": "/static/media/sun.7b21f7c96e6e673c51ce.png",
@@ -19,15 +20,13 @@
     "static/media/PwdGenerator.png": "/static/media/PwdGenerator.9c079c49d01af1c27c98.png",
     "static/media/nightfall.avif": "/static/media/nightfall.9016400b440df0c5b22d.avif",
     "static/media/telephone.png": "/static/media/telephone.6445ecb7531d440f8538.png",
-    "static/media/arrowD.png": "/static/media/arrowD.46f16852e8cb19959c50.png",
-    "static/media/arrowR.png": "/static/media/arrowR.7d1a6a4f734ac6c405f6.png",
     "static/media/githublogo.svg": "/static/media/githublogo.255db585f8a0eb28a1e4deb91bde207d.svg",
     "index.html": "/index.html",
     "main.c144c39c.css.map": "/static/css/main.c144c39c.css.map",
-    "main.ef6204a9.js.map": "/static/js/main.ef6204a9.js.map"
+    "main.6c0a8703.js.map": "/static/js/main.6c0a8703.js.map"
   },
   "entrypoints": [
     "static/css/main.c144c39c.css",
-    "static/js/main.ef6204a9.js"
+    "static/js/main.6c0a8703.js"
   ]
 }
