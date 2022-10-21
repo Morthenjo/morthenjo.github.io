@@ -6,8 +6,6 @@ import nightfallW from "../img/nightfallW.avif";
 import moon from "../img/moon.png";
 import MorthenL from "../pages/homePage/morthenLight.jpg";
 import MorthenD from "../pages/homePage/morthenDark.jpg";
-import ArrowD from "../pages/projectPage/img/arrowD.png";
-import ArrowR from "../pages/projectPage/img/arrowR.png";
 
 //------------------------------------------------------------------------------------//
 //                               Light & Dark                                         //

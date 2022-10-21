@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ArrowDiv = styled.div`
-  background: #fff;
+  background: ${(props) => props.theme.color};
   height: 3px;
   width: 30px;
   margin: auto;
@@ -12,7 +12,7 @@ export const ArrowDiv = styled.div`
   &:before,
   &:after {
     content: "";
-    background: #fff;
+    background: ${(props) => props.theme.color};
     border-radius: 100px;
     position: absolute;
     height: 3px;
@@ -59,7 +59,7 @@ export const ArrowDiv = styled.div`
       transform: rotate(135deg);
       height: 3px;
       width: 15px;
-      background: #fff;
+      background: ${(props) => props.theme.color};
     }
   }
 
@@ -83,7 +83,7 @@ export const ArrowDiv = styled.div`
       transform: rotate(-135deg);
       height: 3px;
       width: 15px;
-      background: #fff;
+      background: ${(props) => props.theme.color};
     }
   }
   @keyframes animation-1-after-reverse {
@@ -93,7 +93,7 @@ export const ArrowDiv = styled.div`
       transform: rotate(135deg);
       height: 3px;
       width: 15px;
-      background: #fff;
+      background: ${(props) => props.theme.color};
     }
 
     50% {
@@ -116,7 +116,7 @@ export const ArrowDiv = styled.div`
       transform: rotate(-135deg);
       height: 3px;
       width: 15px;
-      background: #fff;
+      background: ${(props) => props.theme.color};
     }
 
     50% {
