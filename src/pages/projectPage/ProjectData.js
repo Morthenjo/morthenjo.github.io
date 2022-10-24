@@ -61,7 +61,7 @@ const Projects = () => {
       </ProjectContainer>
     );
   });
-  return <div>{SmallProjectCard}</div>;
+  return <>{SmallProjectCard}</>;
 };
 
 export default Projects;

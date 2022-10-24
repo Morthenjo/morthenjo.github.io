@@ -1,5 +1,10 @@
 import Projects from "./ProjectData";
-import { Blur, StyledHeader } from "../../components/Styles";
+import {
+  Blur,
+  ProjectBox,
+  ProjectFlex,
+  StyledHeader,
+} from "../../components/Styles";
 import { activeTxt } from "../../components/Context";
 import { useContext } from "react";
 
@@ -10,7 +15,9 @@ const ProjectPage = () => {
       <StyledHeader data-aos="fade-up" data-aos-duration="1000">
         {text.Project.Title}
       </StyledHeader>
-      <Projects />
+      <ProjectFlex>
+        <Projects />
+      </ProjectFlex>
     </Blur>
   );
 };

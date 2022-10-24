@@ -69,7 +69,7 @@ export const Blur = styled.div`
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 5% 10% 0;
+  margin: 5% 5% 0;
   transition: 1s;
   @media (max-width: 900px) {
     margin: 5% 5% 0;
@@ -156,6 +156,10 @@ export const FooterDiv = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
+  @media (min-width: 789px) {
+    width: 30rem;
+    margin: 1rem 2rem;
+  }
   width: 100%;
   margin: 1rem 0;
   text-align: center;
@@ -168,19 +172,18 @@ export const ProjectDiv = styled.div`
   transform-origin: 50% 0%;
   max-height: ${(props) => (props.active ? "600px" : "0")};
   height: auto;
-  margin: auto;
   padding: 0 0 2%;
   transition: all 0.6s;
-  @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    margin: 0 auto;
-  }
+  flex-direction: column-reverse;
+  margin: 0 auto;
+  z-index: 0;
 `;
 
 export const ProjectTextDiv = styled.div`
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   padding: 0 5rem;
+  z-index: 0;
   background-image: linear-gradient(
     135deg,
     ${(props) => props.theme.project1} 0%,
@@ -188,26 +191,31 @@ export const ProjectTextDiv = styled.div`
     ${(props) => props.theme.project3} 78%,
     ${(props) => props.theme.project4} 100%
   );
-  border-radius: 3rem 0 0 3rem;
+  border-radius: 0 0 3rem 3rem;
   @media (max-width: 768px) {
-    width: 100%;
     padding: 0;
-    border-radius: 0 0 3rem 3rem;
   }
 `;
 
 export const ProjectFlex = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+`;
+
+export const ProjectBox = styled.div`
+  width: 100%;
 `;
 
 export const ImgContainer = styled.div`
   margin-right: auto;
   height: inherit;
-  width: 20%;
   overflow: hidden;
+  width: 100%;
+  z-index: 0;
   @media (max-width: 768px) {
-    width: 100%;
     height: 100px;
   }
 `;
@@ -255,9 +263,8 @@ export const ProjectImg = styled.img`
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 0 3rem 3rem 0;
+  border-radius: 0;
   @media (max-width: 768px) {
-    border-radius: 0;
   }
 `;
 
@@ -337,6 +344,7 @@ export const StyledP = styled.p`
   gap: 1rem;
   font-weight: 400;
   padding: 0 1rem;
+  z-index: 0;
   @media (min-width: 1200px) {
     font-size: 1.5rem;
   }
@@ -365,6 +373,7 @@ export const FooterP = styled.p`
 `;
 
 export const StyledA = styled.a`
+  z-index: 0;
   color: ${(props) => props.theme.link};
 `;
 
@@ -478,18 +487,18 @@ export const CollapseButton = styled.button`
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 1.5rem;
   font-weight: bold;
-  width: 20rem;
+  width: 90%;
   opacity: ${(props) => (props.active ? 1 : 0.7)};
   cursor: pointer;
   padding: 1rem;
   border-radius: ${(props) => (props.active ? "1rem 1rem 0 0" : "1rem")};
+  z-index: 10;
   :hover {
     color: ${(props) => props.theme.link};
     opacity: 1;
     border: 1px solid white;
   }
   @media (max-width: 768px) {
-    width: 90%;
     font-size: 1rem;
   }
 `;
