@@ -342,6 +342,18 @@ export const StyledP = styled.p`
   }
 `;
 
+export const StyledH4 = styled.h4`
+  color: ${(props) => props.theme.color};
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
+`;
+
 export const FooterP = styled.p`
   color: ${(props) => props.theme.color};
   font-weight: 400;

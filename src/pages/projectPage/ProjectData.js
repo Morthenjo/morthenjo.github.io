@@ -7,6 +7,7 @@ import {
   ProjectImg,
   ProjectTextDiv,
   StyledA,
+  StyledH4,
   StyledP,
 } from "../../components/Styles";
 import { activeTxt } from "../../components/Context";
@@ -27,10 +28,10 @@ const Projects = () => {
           onClick={() => menuToggle(item.id)}
           active={active[item.id]}
         >
-          <StyledP>
+          <StyledH4>
             {item.title}
             <ArrowDiv active={active[item.id]} />
-          </StyledP>
+          </StyledH4>
         </CollapseButton>
         <ProjectDiv key={item.id} active={active[item.id]}>
           <ProjectTextDiv>

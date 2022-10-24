@@ -4,7 +4,7 @@ export const ArrowDiv = styled.div`
   background: ${(props) => props.theme.color};
   height: 3px;
   width: 30px;
-  margin: auto;
+  margin: auto 0 auto auto;
   position: relative;
   border-radius: 100px;
   cursor: pointer;
@@ -20,6 +20,7 @@ export const ArrowDiv = styled.div`
   }
 
   &:before {
+    background: ${(props) => props.theme.color};
     right: -3px;
     bottom: -4px;
     transform: rotate(-45deg);
@@ -30,6 +31,7 @@ export const ArrowDiv = styled.div`
   }
 
   &:after {
+    background: ${(props) => props.theme.color};
     right: -3px;
     top: -4px;
     transform: rotate(45deg);
@@ -44,6 +46,7 @@ export const ArrowDiv = styled.div`
       right: -3px;
       top: -4px;
       transform: rotate(45deg);
+      background: ${(props) => props.theme.color};
     }
 
     50% {
@@ -68,6 +71,7 @@ export const ArrowDiv = styled.div`
       right: -3px;
       bottom: -4px;
       transform: rotate(-45deg);
+      background: ${(props) => props.theme.color};
     }
 
     50% {
@@ -130,6 +134,7 @@ export const ArrowDiv = styled.div`
       right: -3px;
       bottom: -4px;
       transform: rotate(-45deg);
+      background: ${(props) => props.theme.color};
     }
   }
 `;
