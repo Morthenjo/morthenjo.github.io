@@ -26,8 +26,8 @@ export const ArrowDiv = styled.div`
     transform: rotate(-45deg);
     animation: ${(props) =>
       props.active
-        ? "animation-1-before-reverse 1s ease 0s 1 alternate both"
-        : "animation-1-before 1s ease 0s 1 alternate both"};
+        ? "animation-1-before-reverse 0.6s ease 0s 1 alternate both"
+        : "animation-1-before 0.6s ease 0s 1 alternate both"};
   }
 
   &:after {
@@ -37,8 +37,8 @@ export const ArrowDiv = styled.div`
     transform: rotate(45deg);
     animation: ${(props) =>
       props.active
-        ? "animation-1-after-reverse 1s ease 0s 1 alternate both"
-        : "animation-1-after 1s ease 0s 1 alternate both"};
+        ? "animation-1-after-reverse 0.6s ease 0s 1 alternate both"
+        : "animation-1-after 0.6s ease 0s 1 alternate both"};
   }
 
   @keyframes animation-1-after {

@@ -159,6 +159,7 @@ export const ProjectContainer = styled.div`
   @media (min-width: 789px) {
     width: 30rem;
     margin: 1rem 2rem;
+    overflow: hidden;
   }
   width: 100%;
   margin: 1rem 0;
@@ -168,15 +169,20 @@ export const ProjectContainer = styled.div`
 export const ProjectDiv = styled.div`
   display: flex;
   width: 90%;
-  transform: scaleY(${(props) => (props.active ? "100%" : "0")});
-  transform-origin: 50% 0%;
+  transform: RotateY(${(props) => (props.active ? "100%" : "0%")});
+  transform-origin: 50% 50%;
   max-height: ${(props) => (props.active ? "600px" : "0")};
-  height: auto;
+  height: 600px;
   padding: 0 0 2%;
   transition: all 0.6s;
   flex-direction: column-reverse;
   margin: 0 auto;
   z-index: 0;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    height: 300px;
+    max-height: ${(props) => (props.active ? "300px" : "0")};
+  }
 `;
 
 export const ProjectTextDiv = styled.div`
@@ -211,12 +217,12 @@ export const ProjectBox = styled.div`
 
 export const ImgContainer = styled.div`
   margin-right: auto;
-  height: inherit;
+  height: 100%;
   overflow: hidden;
   width: 100%;
   z-index: 0;
   @media (max-width: 768px) {
-    height: 100px;
+    height: 200px;
   }
 `;
 
