@@ -5,6 +5,7 @@ const Text = {
       Greetings: "Hello, jeg er",
       Name: "Morthen Johannessen",
       Title: "Front-End dev student fra Norge.",
+      Skill: "Ferdigheter",
     },
     About: {
       Now: {
@@ -108,6 +109,7 @@ const Text = {
       Greetings: "Hello, I am",
       Name: "Morthen Johannessen",
       Title: "Front-End dev student from Norway",
+      Skill: "Skillset",
     },
     About: {
       Now: {
