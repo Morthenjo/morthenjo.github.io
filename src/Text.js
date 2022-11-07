@@ -180,9 +180,9 @@ const Text = {
         description: "Play some drums with your keyboard.",
         coverIMG: require("./pages/projectPage/img/drumkit.png"),
         alt: "A drumkit",
-        link: "https://morthenjo.github.io/Drumkit-git",
+        link: "https://morthenjo.github.io/DrumKit-git",
         website: "Website",
-        repo: "https://github.com/Morthenjo/Drumkit-git",
+        repo: "https://github.com/Morthenjo/DrumKit-git",
       },
       {
         id: 6,

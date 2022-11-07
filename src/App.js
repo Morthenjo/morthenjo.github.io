@@ -17,6 +17,7 @@ import { activeTxt } from "./components/Context";
 import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
 import ContactPage from "./pages/contactPage";
+import SkillPage from "./pages/skillPage";
 
 function App() {
   const [text, setText] = useState(Text.English);
@@ -56,6 +57,7 @@ function App() {
           <Button onClick={menuToggle}>{text.Button.Text}</Button>
           <DarkModeButton onClick={themeToggler}></DarkModeButton>
           <HomePage />
+          <SkillPage />
           <AboutMe />
           <ProjectPage />
           <ContactPage />
